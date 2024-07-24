@@ -1,118 +1,159 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alena Vlková - Food Blog</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5dc;
-            color: #4b3621;
-        }
-        header {
-            background-color: #d2b48c;
-            padding: 1rem;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 1rem;
-            color: #4b3621;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        section {
-            padding: 2rem;
-        }
-        footer {
-            background-color: #d2b48c;
-            text-align: center;
-            padding: 1rem;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-        .container {
-            max-width: 1200px;
-            margin: auto;
-        }
-        .portfolio img {
-            width: 100%;
-            height: auto;
-            margin-bottom: 1rem;
-        }
-        .social-icons img {
-            width: 30px;
-            margin: 0 10px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chutě s vášní - Alena Vlková</title>
+  
+  <!-- Importování fontu Georgia -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&display=swap');
+  </style>
+  
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background: #f4a261; /* Světlá oranžová */
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+    header h1 {
+      font-size: 3em;
+      font-weight: bold;
+      margin: 0;
+    }
+    header img {
+      width: 100%;
+      height: auto;
+      max-height: 400px;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+    nav {
+      background: #e9cfcf; /* Světlá béžová */
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #5d4037; /* Tmavší hnědá barva */
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    .container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+    }
+    section {
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-weight: bold;
+      color: #f4a261; /* Světlá oranžová */
+    }
+    footer {
+      background: #8d6e63; /* Hnědá barva */
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+    .social-links a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 18px;
+    }
+    .social-links a:hover {
+      text-decoration: underline;
+    }
+    .contact-info {
+      font-style: italic;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Alena Vlková - Chut Svasni</h1>
-        <nav>
-            <a href="#about">O mně</a>
-            <a href="#blog">Blog</a>
-            <a href="#videos">Krátké videorecepty</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#social">Sociální sítě</a>
-            <a href="#contact">Kontakt</a>
-        </nav>
-    </header>
-    <div class="container">
-        <section id="about">
-            <h2>O mně</h2>
-            <p>Ahoj! Jmenuji se Alena Vlková a jsem nadšená food bloggerka. Na své stránce Chut Svasni se zaměřuji na tvoření kvalitního a inspirativního food kontentu. Miluji zdravou a vyváženou stravu a ráda sdílím své recepty a tipy s ostatními.</p>
-        </section>
-        <section id="blog">
-            <h2>Blog</h2>
-            <p>Zde najdete mé nejnovější příspěvky a články o jídle, receptech a dalších zajímavostech.</p>
-        </section>
-        <section id="videos">
-            <h2>Krátké videorecepty</h2>
-            <p>Podívejte se na mé krátké videorecepty a naučte se, jak připravit zdravá a chutná jídla.</p>
-            <!-- Zde mohou být vložená videa z YouTube nebo jiných platforem -->
-        </section>
-        <section id="portfolio">
-            <h2>Portfolio</h2>
-            <p>Zde jsou některé z mých nejlepších fotografií jídel.</p>
-            <div class="portfolio">
-                <img src="image1.jpg" alt="Jídlo 1">
-                <img src="image2.jpg" alt="Jídlo 2">
-                <img src="image3.jpg" alt="Jídlo 3">
-            </div>
-        </section>
-        <section id="social">
-            <h2>Sociální sítě</h2>
-            <p>Sledujte mě na sociálních sítích:</p>
-            <div class="social-icons">
-                <a href="https://www.instagram.com/chutsvasni" target="_blank">
-                    <img src="instagram-icon.png" alt="Instagram">
-                </a>
-                <a href="#" target="_blank">
-                    <img src="tiktok-icon.png" alt="TikTok">
-                </a>
-                <a href="#" target="_blank">
-                    <img src="pinterest-icon.png" alt="Pinterest">
-                </a>
-            </div>
-        </section>
-        <section id="contact">
-            <h2>Kontakt</h2>
-            <p>Pokud mě chcete kontaktovat, můžete mi napsat na email: <a href="mailto:alena.vlkova@example.com">alena.vlkova@example.com</a></p>
-            <form>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-                <label for="message">Zpráva:</label>
-                <textarea id="message" name="message"></textarea>
-                <button type="submit">Odeslat</button>
-            </form>
-        </section>
-    </div>
-    <footer>
-        <p>&copy; 2024 Alena Vlková. Všechna práva vyhrazena.</p>
-    </footer>
+  <header>
+    <h1>Chutě s vášní</h1>
+    <!-- Úvodní fotka -->
+    <img src="path-to-your-image.jpg" alt="Úvodní fotka">
+  </header>
+
+  <nav>
+    <a href="#about-me">Zdravím Vás</a>
+    <a href="#blog">Blog</a>
+    <a href="#videos">Krátké videorecepty</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#social-media">Sociální sítě</a>
+    <a href="#contact">Kontakt</a>
+  </nav>
+
+  <div class="container">
+    <!-- Sekce Zdravím Vás -->
+    <section id="about-me">
+      <h2>Zdravím Vás</h2>
+      <p>Vítejte na stránkách! Jmenuji se Alena Vlková a vaření je mojí vášní už od malička. Od útlého věku jsem se s radostí ponořila do světa zdravého a výživného vaření, což se stalo nejen mou zálibou, ale i způsobem života. Každé jídlo, které připravuji, je nejen výživné, ale i vizuálně atraktivní, protože věřím, že estetika jídla hraje klíčovou roli v našem celkovém zážitku z jídla.</p>
+      <p>Mou prioritou je vždy čerstvost surovin. Využívám především zeleninu a snažím se přinášet nové a zajímavé veganské recepty, které jsou nejen chutné, ale také šetrné k přírodě. Tento blog jsem založila s cílem sdílet své oblíbené recepty s vámi a zároveň se neustále učit a objevovat nové kulinářské techniky a ingredience. Doufám, že moje recepty vám přinesou inspiraci a radost při vaření. Pojďme společně objevovat krásu zdravého vaření a vytvářet lahodné pokrmy, které budou nejen dobře chutnat, ale i skvěle vypadat!</p>
+    </section>
+
+    <!-- Sekce Blog -->
+    <section id="blog">
+      <h2>Blog</h2>
+      <p>Tady najdete nejnovější články a recepty, které sdílím. Blog se zaměřuje na zdravé a chutné vaření, nové techniky a zajímavé ingredience. Můžete se těšit na pravidelný přísun inspirace, která vám pomůže zlepšit vaše kulinářské dovednosti.</p>
+    </section>
+
+    <!-- Sekce Krátké videorecepty -->
+    <section id="videos">
+      <h2>Krátké videorecepty</h2>
+      <p>Podívejte se na naše krátké videorecepty, které vám ukážou, jak snadno připravit zdravá a chutná jídla. Každé video je zaměřeno na rychlé a jednoduché recepty, které můžete snadno zařadit do svého každodenního jídelníčku.</p>
+    </section>
+
+    <!-- Sekce Portfolio -->
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <p>V této sekci naleznete ukázky některých mých nejlepších jídel a kulinářských projektů. Můžete se inspirovat mými oblíbenými recepty a přizpůsobit je svým potřebám a chutím.</p>
+    </section>
+
+    <!-- Sekce Sociální sítě -->
+    <section id="social-media">
+      <h2>Sociální sítě</h2>
+      <p>Podívejte se na mé sociální sítě, kde pravidelně sdílím nové recepty, tipy a inspiraci. Sledujte mě na Instagramu a dalších platformách, abyste nezmeškali žádné novinky!</p>
+      <p>Děkuji za vaši podporu!</p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/chutsvasni/?utm_source=ig_web_button_share_sheet" target="_blank">Instagram</a>
+        <!-- Přidejte odkazy na další sociální sítě, jakmile budou k dispozici -->
+      </div>
+    </section>
+
+    <!-- Sekce Kontakt -->
+    <section id="contact">
+      <h2>Kontakt</h2>
+      <p>Pokud máte jakékoliv dotazy nebo návrhy, neváhejte mě kontaktovat. Ráda se s vámi spojím a odpovím na vaše otázky.</p>
+      <p class="contact-info">Telefonní číslo: <a href="tel:+420603998279">603 998 279</a></p>
+      <p class="contact-info">Email: <a href="mailto:chutesvasni@seznam.cz">chutesvasni@seznam.cz</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Alena Vlková. Všechna práva vyhrazena.</p>
+  </footer>
 </body>
 </html>
