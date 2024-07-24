@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alena Vlková - Food Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5dc;
+            color: #4b3621;
+        }
+        header {
+            background-color: #d2b48c;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 1rem;
+            color: #4b3621;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 2rem;
+        }
+        footer {
+            background-color: #d2b48c;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+        .portfolio img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+        .social-icons img {
+            width: 30px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Alena Vlková - Chut Svasni</h1>
+        <nav>
+            <a href="#about">O mně</a>
+            <a href="#blog">Blog</a>
+            <a href="#videos">Krátké videorecepty</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#social">Sociální sítě</a>
+            <a href="#contact">Kontakt</a>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="about">
+            <h2>O mně</h2>
+            <p>Ahoj! Jmenuji se Alena Vlková a jsem nadšená food bloggerka. Na své stránce Chut Svasni se zaměřuji na tvoření kvalitního a inspirativního food kontentu. Miluji zdravou a vyváženou stravu a ráda sdílím své recepty a tipy s ostatními.</p>
+        </section>
+        <section id="blog">
+            <h2>Blog</h2>
+            <p>Zde najdete mé nejnovější příspěvky a články o jídle, receptech a dalších zajímavostech.</p>
+        </section>
+        <section id="videos">
+            <h2>Krátké videorecepty</h2>
+            <p>Podívejte se na mé krátké videorecepty a naučte se, jak připravit zdravá a chutná jídla.</p>
+            <!-- Zde mohou být vložená videa z YouTube nebo jiných platforem -->
+        </section>
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <p>Zde jsou některé z mých nejlepších fotografií jídel.</p>
+            <div class="portfolio">
+                <img src="image1.jpg" alt="Jídlo 1">
+                <img src="image2.jpg" alt="Jídlo 2">
+                <img src="image3.jpg" alt="Jídlo 3">
+            </div>
+        </section>
+        <section id="social">
+            <h2>Sociální sítě</h2>
+            <p>Sledujte mě na sociálních sítích:</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/chutsvasni" target="_blank">
+                    <img src="instagram-icon.png" alt="Instagram">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="tiktok-icon.png" alt="TikTok">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="pinterest-icon.png" alt="Pinterest">
+                </a>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Kontakt</h2>
+            <p>Pokud mě chcete kontaktovat, můžete mi napsat na email: <a href="mailto:alena.vlkova@example.com">alena.vlkova@example.com</a></p>
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Zpráva:</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Odeslat</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Alena Vlková. Všechna práva vyhrazena.</p>
+    </footer>
+</body>
+</html>
