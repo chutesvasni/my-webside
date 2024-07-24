@@ -19,11 +19,12 @@
       color: #333;
     }
     header {
-      background: #f4a261; /* Světlá oranžová */
+      background: #d99d80; /* Tmavší hnědo-oranžová */
       color: #fff;
       padding: 20px;
       text-align: center;
       position: relative;
+      border-bottom: 10px solid #8d6e63; /* Tmavě hnědá linka dole */
     }
     header h1 {
       font-size: 3em;
@@ -41,9 +42,10 @@
       z-index: -1;
     }
     nav {
-      background: #e9cfcf; /* Světlá béžová */
+      background: #f5e3e0; /* Světlá béžová */
       padding: 10px;
       text-align: center;
+      border-top: 10px solid #8d6e63; /* Tmavě hnědá linka nahoře */
     }
     nav a {
       color: #5d4037; /* Tmavší hnědá barva */
@@ -65,7 +67,7 @@
     }
     h2 {
       font-weight: bold;
-      color: #f4a261; /* Světlá oranžová */
+      color: #d99d80; /* Tmavší hnědo-oranžová */
     }
     footer {
       background: #8d6e63; /* Hnědá barva */
@@ -88,6 +90,14 @@
     .contact-info {
       font-style: italic;
     }
+    .section-background {
+      background: linear-gradient(to bottom, #f4a261, #e9cfcf); /* Gradient mezi oranžovou a béžovou */
+    }
+    .portfolio-title {
+      font-size: 2em;
+      font-weight: bold;
+      color: #d99d80; /* Tmavší hnědo-oranžová */
+    }
   </style>
 </head>
 <body>
@@ -100,36 +110,37 @@
   <nav>
     <a href="#about-me">Zdravím Vás</a>
     <a href="#blog">Blog</a>
-    <a href="#videos">Krátké videorecepty</a>
-    <a href="#portfolio">Portfolio</a>
+    <a href="#videos">Moje tvorba</a>
+    <a href="#portfolio">DOBROU CHUŤ</a>
     <a href="#social-media">Sociální sítě</a>
     <a href="#contact">Kontakt</a>
   </nav>
 
   <div class="container">
     <!-- Sekce Zdravím Vás -->
-    <section id="about-me">
+    <section id="about-me" class="section-background">
       <h2>Zdravím Vás</h2>
-      <p>Vítejte na stránkách! Jmenuji se Alena Vlková a vaření je mojí vášní už od malička. Od útlého věku jsem se s radostí ponořila do světa zdravého a výživného vaření, což se stalo nejen mou zálibou, ale i způsobem života. Každé jídlo, které připravuji, je nejen výživné, ale i vizuálně atraktivní, protože věřím, že estetika jídla hraje klíčovou roli v našem celkovém zážitku z jídla.</p>
-      <p>Mou prioritou je vždy čerstvost surovin. Využívám především zeleninu a snažím se přinášet nové a zajímavé veganské recepty, které jsou nejen chutné, ale také šetrné k přírodě. Tento blog jsem založila s cílem sdílet své oblíbené recepty s vámi a zároveň se neustále učit a objevovat nové kulinářské techniky a ingredience. Doufám, že moje recepty vám přinesou inspiraci a radost při vaření. Pojďme společně objevovat krásu zdravého vaření a vytvářet lahodné pokrmy, které budou nejen dobře chutnat, ale i skvěle vypadat!</p>
+      <p>Ahojte, jmenuji se Alenka a vítám vás na stránkách, které jsou věnované mému největšímu koníčku – vaření! Vaření je pro mě více než jen příprava jídla; je to kreativní proces, který mi umožňuje prozkoumávat nové chutě, textury a kombinace. Moje vášeň pro jídlo se zrodila už v dětství a od té doby jsem se snažila, aby každé jídlo, které připravuji, bylo nejen chutné, ale také krásné a inspirativní.</p>
+      <p>Po několik let jsem sdílela fotografie svých jídel na Instagramu, kde jsem dostávala kladné reakce a povzbuzení od mnoha sledujících. Tato pozitivní zpětná vazba mě motivovala k tomu, abych svou vášeň posunula na vyšší úroveň. Rozhodla jsem se vytvořit tento blog, kde vám budu pravidelně přinášet nové, zdravé a chutné recepty, které si můžete snadno připravit doma.</p>
+      <p>Mým cílem je nejen inspirovat vás k vaření, ale také vám ukázat, jak snadno můžete začlenit zdravé ingredience do svého jídelníčku. Na tomto blogu najdete nejen recepty, ale také užitečné tipy, nákupní seznamy a výzvy, které vám pomohou udržet vaření zábavné a zajímavé. Děkuji, že jste zde, a těším se na společné kulinářské dobrodružství!</p>
     </section>
 
     <!-- Sekce Blog -->
     <section id="blog">
       <h2>Blog</h2>
-      <p>Tady najdete nejnovější články a recepty, které sdílím. Blog se zaměřuje na zdravé a chutné vaření, nové techniky a zajímavé ingredience. Můžete se těšit na pravidelný přísun inspirace, která vám pomůže zlepšit vaše kulinářské dovednosti.</p>
+      <p>Na mém blogu se zaměřuji na zdravé a rychlé recepty, které vám pomohou udržet zdravý životní styl bez kompromisů v chuti. Každý týden zde najdete nové články a recepty, které jsou snadno připravitelné a plné výživných ingrediencí. Chci vás inspirovat k tomu, abyste objevovali nové recepty a zároveň se bavili při jejich přípravě. Na blogu také najdete různé challenge, jako jsou recepty do 20 minut nebo výživné snídaně, a praktické nákupní seznamy pro snadnou přípravu vašich oblíbených jídel.</p>
     </section>
 
-    <!-- Sekce Krátké videorecepty -->
+    <!-- Sekce Moje tvorba -->
     <section id="videos">
-      <h2>Krátké videorecepty</h2>
-      <p>Podívejte se na naše krátké videorecepty, které vám ukážou, jak snadno připravit zdravá a chutná jídla. Každé video je zaměřeno na rychlé a jednoduché recepty, které můžete snadno zařadit do svého každodenního jídelníčku.</p>
+      <h2>Moje tvorba</h2>
+      <p>Objevte kouzlo krátkých videoreceptů, které vás provedou přípravou lahodných jídel během několika minut! Každé video je navrženo tak, aby vám ukázalo, jak snadno a rychle připravit jídla, která nejen skvěle chutnají, ale také vypadají úžasně. Sledujte naše videa a získejte tipy, jak vytvořit úžasná jídla bez zbytečného stresu. Ponořte se do světa rychlých a snadných receptů a uvidíte, jak vás vaření může bavit!</p>
     </section>
 
-    <!-- Sekce Portfolio -->
+    <!-- Sekce DOBROU CHUŤ -->
     <section id="portfolio">
-      <h2>Portfolio</h2>
-      <p>V této sekci naleznete ukázky některých mých nejlepších jídel a kulinářských projektů. Můžete se inspirovat mými oblíbenými recepty a přizpůsobit je svým potřebám a chutím.</p>
+      <h2 class="portfolio-title">DOBROU CHUŤ</h2>
+      <p>V této sekci naleznete ukázky některých mých nejlepších jídel a kulinářských projektů. Můžete se inspirovat mými oblíbenými recepty a přizpůsobit je svým potřebám a chutím. Každý recept je pečlivě připraven, aby splnil vysoké standardy chuti a zdraví. Přeji vám dobrou chuť!</p>
     </section>
 
     <!-- Sekce Sociální sítě -->
