@@ -15,71 +15,119 @@
       font-family: 'Georgia', serif;
       margin: 0;
       padding: 0;
-      background-color: #f5f5f5;
-      color: #333;
+      background: linear-gradient(to bottom, #fef8e4, #f5e3d8); /* Jemně vystínované pozadí */
+      color: #4e3b2a; /* Světle hnědá barva textu */
     }
     header {
-      background: #d99d80; /* Tmavší hnědo-oranžová */
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-      position: relative;
-      border-bottom: 10px solid #8d6e63; /* Tmavě hnědá linka dole */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #f5e3d8; /* Světlá béžová */
+      border-bottom: 5px solid #d7b59e; /* Tmavší béžová */
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
     }
     header h1 {
-      font-size: 3em;
+      font-size: 1.5em;
       font-weight: bold;
       margin: 0;
     }
-    header img {
-      width: 100%;
-      height: auto;
-      max-height: 400px;
-      object-fit: cover;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-    }
     nav {
-      background: #f5e3e0; /* Světlá béžová */
-      padding: 10px;
-      text-align: center;
-      border-top: 10px solid #8d6e63; /* Tmavě hnědá linka nahoře */
+      font-size: 0.9em;
+      font-weight: bold;
     }
     nav a {
-      color: #5d4037; /* Tmavší hnědá barva */
+      color: #4e3b2a; /* Tmavá hnědá barva */
       text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
+      margin-left: 15px;
+      padding: 5px;
     }
-    .container {
-      width: 80%;
-      margin: auto;
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .main-section {
+      display: flex;
+      height: 100vh;
       overflow: hidden;
-    }
-    section {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
       padding: 20px;
-      background: #fff;
+      background: #f5e3d8; /* Světlá béžová */
+    }
+    .main-section img {
+      width: 100%;
+      height: auto;
+      max-width: 500px;
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      margin-bottom: 20px;
     }
-    h2 {
+    .main-content {
+      flex: 1;
+      margin-right: 20px;
+    }
+    .main-content h2 {
+      font-size: 3em;
       font-weight: bold;
-      color: #d99d80; /* Tmavší hnědo-oranžová */
+      color: #4e3b2a; /* Tmavá hnědá barva */
+      margin: 0;
     }
-    footer {
-      background: #8d6e63; /* Hnědá barva */
-      color: #fff;
-      text-align: center;
+    .main-content p {
+      font-size: 1.1em;
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+    .bubble {
+      display: inline-block;
       padding: 10px;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
+      border: 2px solid #d7b59e; /* Tmavší béžová */
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: relative;
+      margin-top: 20px;
+    }
+    .bubble::before {
+      content: '';
+      position: absolute;
+      bottom: 100%;
+      left: 20px;
+      width: 0;
+      height: 0;
+      border-width: 10px;
+      border-style: solid;
+      border-color: transparent transparent #fff transparent;
+      border-bottom-color: #d7b59e;
+    }
+    .section {
+      padding: 20px;
+      background: #fef8e4; /* Jemně béžová */
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .section h2 {
+      font-size: 2em;
+      font-weight: bold;
+      color: #4e3b2a; /* Tmavá hnědá barva */
+    }
+    .section p {
+      font-size: 1.1em;
+      margin-top: 10px;
+      line-height: 1.6;
+      color: #5c4a3c; /* Světle hnědá barva */
+    }
+    .social-links {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
     }
     .social-links a {
-      color: #fff;
+      color: #4e3b2a; /* Tmavá hnědá barva */
       text-decoration: none;
       margin: 0 10px;
       font-size: 18px;
@@ -87,81 +135,82 @@
     .social-links a:hover {
       text-decoration: underline;
     }
-    .contact-info {
-      font-style: italic;
+    .contact-info img {
+      width: 20px;
+      vertical-align: middle;
+      margin-right: 10px;
     }
-    .section-background {
-      background: linear-gradient(to bottom, #f4a261, #e9cfcf); /* Gradient mezi oranžovou a béžovou */
-    }
-    .portfolio-title {
-      font-size: 2em;
-      font-weight: bold;
-      color: #d99d80; /* Tmavší hnědo-oranžová */
+    footer {
+      background: #d7b59e; /* Tmavší béžová */
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Chutě s vášní</h1>
-    <!-- Úvodní fotka -->
-    <img src="path-to-your-image.jpg" alt="Úvodní fotka">
+    <nav>
+      <a href="#about-me">Chutě s vášní</a>
+      <a href="#blog">Blog</a>
+      <a href="#videos">Moje tvorba</a>
+      <a href="#portfolio">DOBROU CHUŤ</a>
+      <a href="#social-media">Sociální sítě</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#about-me">Zdravím Vás</a>
-    <a href="#blog">Blog</a>
-    <a href="#videos">Moje tvorba</a>
-    <a href="#portfolio">DOBROU CHUŤ</a>
-    <a href="#social-media">Sociální sítě</a>
-    <a href="#contact">Kontakt</a>
-  </nav>
-
-  <div class="container">
-    <!-- Sekce Zdravím Vás -->
-    <section id="about-me" class="section-background">
-      <h2>Zdravím Vás</h2>
+  <div class="main-section">
+    <div class="main-content">
+      <h2>Chutě s vášní</h2>
       <p>Ahojte, jmenuji se Alenka a vítám vás na stránkách, které jsou věnované mému největšímu koníčku – vaření! Vaření je pro mě více než jen příprava jídla; je to kreativní proces, který mi umožňuje prozkoumávat nové chutě, textury a kombinace. Moje vášeň pro jídlo se zrodila už v dětství a od té doby jsem se snažila, aby každé jídlo, které připravuji, bylo nejen chutné, ale také krásné a inspirativní.</p>
       <p>Po několik let jsem sdílela fotografie svých jídel na Instagramu, kde jsem dostávala kladné reakce a povzbuzení od mnoha sledujících. Tato pozitivní zpětná vazba mě motivovala k tomu, abych svou vášeň posunula na vyšší úroveň. Rozhodla jsem se vytvořit tento blog, kde vám budu pravidelně přinášet nové, zdravé a chutné recepty, které si můžete snadno připravit doma.</p>
       <p>Mým cílem je nejen inspirovat vás k vaření, ale také vám ukázat, jak snadno můžete začlenit zdravé ingredience do svého jídelníčku. Na tomto blogu najdete nejen recepty, ale také užitečné tipy, nákupní seznamy a výzvy, které vám pomohou udržet vaření zábavné a zajímavé. Děkuji, že jste zde, a těším se na společné kulinářské dobrodružství!</p>
-    </section>
-
-    <!-- Sekce Blog -->
-    <section id="blog">
-      <h2>Blog</h2>
-      <p>Na mém blogu se zaměřuji na zdravé a rychlé recepty, které vám pomohou udržet zdravý životní styl bez kompromisů v chuti. Každý týden zde najdete nové články a recepty, které jsou snadno připravitelné a plné výživných ingrediencí. Chci vás inspirovat k tomu, abyste objevovali nové recepty a zároveň se bavili při jejich přípravě. Na blogu také najdete různé challenge, jako jsou recepty do 20 minut nebo výživné snídaně, a praktické nákupní seznamy pro snadnou přípravu vašich oblíbených jídel.</p>
-    </section>
-
-    <!-- Sekce Moje tvorba -->
-    <section id="videos">
-      <h2>Moje tvorba</h2>
-      <p>Objevte kouzlo krátkých videoreceptů, které vás provedou přípravou lahodných jídel během několika minut! Každé video je navrženo tak, aby vám ukázalo, jak snadno a rychle připravit jídla, která nejen skvěle chutnají, ale také vypadají úžasně. Sledujte naše videa a získejte tipy, jak vytvořit úžasná jídla bez zbytečného stresu. Ponořte se do světa rychlých a snadných receptů a uvidíte, jak vás vaření může bavit!</p>
-    </section>
-
-    <!-- Sekce DOBROU CHUŤ -->
-    <section id="portfolio">
-      <h2 class="portfolio-title">DOBROU CHUŤ</h2>
-      <p>V této sekci naleznete ukázky některých mých nejlepších jídel a kulinářských projektů. Můžete se inspirovat mými oblíbenými recepty a přizpůsobit je svým potřebám a chutím. Každý recept je pečlivě připraven, aby splnil vysoké standardy chuti a zdraví. Přeji vám dobrou chuť!</p>
-    </section>
-
-    <!-- Sekce Sociální sítě -->
-    <section id="social-media">
-      <h2>Sociální sítě</h2>
-      <p>Podívejte se na mé sociální sítě, kde pravidelně sdílím nové recepty, tipy a inspiraci. Sledujte mě na Instagramu a dalších platformách, abyste nezmeškali žádné novinky!</p>
-      <p>Děkuji za vaši podporu!</p>
-      <div class="social-links">
-        <a href="https://www.instagram.com/chutsvasni/?utm_source=ig_web_button_share_sheet" target="_blank">Instagram</a>
-        <!-- Přidejte odkazy na další sociální sítě, jakmile budou k dispozici -->
-      </div>
-    </section>
-
-    <!-- Sekce Kontakt -->
-    <section id="contact">
-      <h2>Kontakt</h2>
-      <p>Pokud máte jakékoliv dotazy nebo návrhy, neváhejte mě kontaktovat. Ráda se s vámi spojím a odpovím na vaše otázky.</p>
-      <p class="contact-info">Telefonní číslo: <a href="tel:+420603998279">603 998 279</a></p>
-      <p class="contact-info">Email: <a href="mailto:chutesvasni@seznam.cz">chutesvasni@seznam.cz</a></p>
-    </section>
+    </div>
+    <img src="images/food-image.jpg" alt="Obrázek jídla">
   </div>
+
+  <section id="blog" class="section">
+    <h2>Blog</h2>
+    <div class="bubble">
+      <p>Na mém blogu se zaměřuji na zdravé a rychlé recepty, které vám pomohou udržet zdravý životní styl bez kompromisů v chuti. Každý týden zde najdete nové články a recepty, které jsou snadno připravitelné a plné výživných ingrediencí. Chci vás inspirovat k tomu, abyste objevovali nové recepty a zároveň se bavili při jejich přípravě. Na blogu také najdete různé challenge, jako jsou recepty do 20 minut nebo výživné snídaně, a praktické nákupní seznamy pro snadnou přípravu vašich oblíbených jídel.</p>
+    </div>
+    <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px;">
+      <a href="#videos" style="display: block; width: 100px; height: 100px; border: 2px solid #d7b59e; border-radius: 50%; text-align: center; line-height: 100px; color: #4e3b2a; font-size: 18px; text-decoration: none;">Videorecepty</a>
+    </div>
+  </section>
+
+  <section id="videos" class="section">
+    <h2>Moje tvorba</h2>
+    <p>Objevte má krátká videa, kde vás provázím přípravou mých oblíbených receptů. Každé video je navrženo tak, aby vám ukázalo, jak snadno a rychle můžete připravit chutné a zdravé jídlo. Sledujte, jak se ingredience mění v lahodná jídla a nechte se inspirovat k vlastní kuchařské tvorbě!</p>
+  </section>
+
+  <section id="portfolio" class="section">
+    <h2><strong>DOBROU CHUŤ</strong></h2>
+    <p>V této sekci najdete ukázky některých z mých nejlepších jídel a kulinářských kreací. Každý pokrm je vybraný s ohledem na jeho chuť, vzhled a výživovou hodnotu. Doufám, že vám moje portfolio poskytne inspiraci a motivaci k vaření a experimentování v kuchyni.</p>
+  </section>
+
+  <section id="social-media" class="section">
+    <h2>Sociální sítě</h2>
+    <p>Pokud chcete sledovat moje kulinářské dobrodružství na sociálních sítích, neváhejte se připojit na můj Instagram. Děkuji za vaši podporu a těším se na vaši interakci!</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/chutsvasni/?utm_source=ig_web_button_share_sheet" target="_blank">Instagram</a>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Kontakt</h2>
+    <div class="contact-info">
+      <img src="images/mail-icon.png" alt="Poštovní obálka"> <a href="mailto:chutesvasni@seznam.cz">chutesvasni@seznam.cz</a>
+    </div>
+    <div class="contact-info">
+      <img src="images/phone-icon.png" alt="Telefon"> <a href="tel:+420603998279">603 998 279</a>
+    </div>
+  </section>
 
   <footer>
     <p>&copy; 2024 Alena Vlková. Všechna práva vyhrazena.</p>
